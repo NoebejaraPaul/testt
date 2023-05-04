@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Document</title>
+</head>
+<body>
+	<p id="paragraph1">This is the first paragraph.</p>
+	<p id="paragraph2">This is the second paragraph.</p>
+	<p id="paragraph3">This is the third paragraph.</p>
+  
+  <script src = "https://cdnjs.cloudflare.com/ajax/lib/mdui/0.4.0/js/mdui.min.js"></sript>
+    
+  <script>
+      var paragrathCont = mdui.JQ;
+    paragrathCont.ajax({
+        method: 'GET',
+        url: ''https://raw.githubusercontent.com/NoebejaraPaul/testt/hello',
+        success: function(data){
+        json.JSON.parse(data);
+        document.getElementById("paragraph1").innerHTML = json.content;
+        document.getElementById("paragraph2").innerHTML = json.content;
+       
+    }
+    })
+  </script>
+  
+  
+</body>
+</html>
 
